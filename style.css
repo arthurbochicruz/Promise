@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background: #101114;
+    color: #fff;
+    padding: 40px 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.descricao {
+    text-align: center;
+    color: #9da0a8;
+    margin-bottom: 40px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background: #191b20;
+    border: 1px solid #292c33;
+    border-radius: 12px;
+    padding: 25px;
+    text-align: center;
+}
+
+.icone {
+    font-size: 40px;
+}
+
+.card h2 {
+    margin: 15px 0 10px;
+}
+
+.card p {
+    color: #9da0a8;
+    margin-bottom: 20px;
+}
+
+button {
+    border: none;
+    border-radius: 8px;
+    padding: 11px 18px;
+    background: #30343c;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #454a55;
+}
+
+.resultado {
+    margin-top: 18px;
+    padding: 12px;
+    border-radius: 8px;
+    background: #111317;
+    color: #9da0a8;
+    min-height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#pesquisarProdutos {
+    margin-left: 8px;
+}
+.dados {
+    margin-top: 30px;
+    padding: 25px;
+    background: #191b20;
+    border: 1px solid #292c33;
+    border-radius: 12px;
+}
+
+.dados h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#resultadoOperacao {
+    min-height: 150px;
+    padding: 15px;
+    border-radius: 8px;
+    background: #111317;
+    color: #ffffff;
+    white-space: pre-line;
+    line-height: 30px;
+}
+
+@media (max-width: 768px) {
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+}

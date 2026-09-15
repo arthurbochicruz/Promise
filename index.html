@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Central de Dados</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="container">
+
+        <h1>Central de Dados</h1>
+        <p class="descricao">Simulador de requisições assíncronas</p>
+
+        <section class="cards">
+
+            <div class="card">
+                <span class="icone">👤</span>
+                <h2>Usuário</h2>
+                <p>Buscar informações dos usuários.</p>
+                <button id="buscarUsuario">Buscar usuário</button>
+                <div class="resultado" id="resultadoUsuario">
+                    Aguardando... 
+                </div>
+            </div>
+
+            <div class="card">
+                <span class="icone">📦</span>
+                <h2>Produtos</h2>
+                <p>Buscar lista de produtos.</p>
+                <button id="buscarProdutos">Buscar produtos</button>
+                <button id="pesquisarProdutos">Pesquisar</button>
+
+                <div class="resultado" id="resultadoProdutos">
+                    Aguardando...
+                </div>
+            </div>
+
+            <div class="card">
+                <span class="icone">📰</span>
+                <h2>Notícias</h2>
+                <p>Buscar notícias.</p>
+                <button id="buscarNoticias">Buscar notícias</button>
+                <div class="resultado" id="resultadoNoticias">
+                    Aguardando...
+                </div>
+            </div>
+
+        </section>
+
+        <section class="dados">
+
+            <h2>Resultados</h2>
+
+            <div id="resultadoOperacao">
+                Aguardando operação...
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
